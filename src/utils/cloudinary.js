@@ -26,6 +26,13 @@ const uploadOnCloudinary = async (localFilePath) => {
     }
 }
 
+//  Add this when you want to delete a video and you want to delete that from cloudinary as well
+// const deleteFromCloudinary = async (publicId, resourceType) => {
+//     if (!publicId) return null
 
+//     return await cloudinary.uploader.destroy(publicId, {
+//         resource_type: resourceType
+//     })
+// }
 
 export {uploadOnCloudinary}
